@@ -12,14 +12,18 @@ global.antitags = false;
 
 //auto functioner
 global.autoTyping = false;                //make true to enable auto typing
-global.autoRecord = true;                //make true to enable auto recording
+global.autoRecord = false;                //make true to enable auto recording
 global.groupevent = false;                //This is the new variable for controlling group event handling.
-global.statusseen = false;                 //make true to view statuses 
+global.statusseen = true;                 //make true to view statuses 
 
 
 //
-global.Owner = [""];
-global.OwnerNumber = [""]; 
+global.Owner = ["255737552716"];
+global.OwnerNumberglobal.Owner = ["2347080968564"]; 
+global.OwnerNumber = ["255737552716"];
+global.ownertag = ["2347080968564"];
+global.OwnerName = "Tᴀɪʀᴀ Mᴀᴋɪɴᴏ";
+global.BotName = "🐦Makino-md-v2"; = [""]; 
 global.ownertag = [""]; 
 global.OwnerName = "Tᴀɪʀᴀ Mᴀᴋɪɴᴏ";
 global.BotName = "🐦Makino-md-v2";
@@ -39,7 +43,7 @@ global.openAiAPI = "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";
 
 
 //
-global.location = "Lagos, Nigeria";                   
+global.location = "Daressalaam,Tanzania";                   
 global.reactmoji = "🐦";
 global.themeemoji = "😏";
 global.vidmenu = { url: 'https://tenor.com/view/jujutsu-kaisen0-yuta-okkotsu-gif-26767662' };
@@ -82,7 +86,7 @@ global.mess = {
     botadmin: 'Make me Admin first 😌📍.',
     botowner: 'Only my *Owner* can use this command,Dont trespass, Baka!',
     grouponly: 'This command is only made for *Groups*, Baka!',
-    privateonly: 'This command is only made for *Private Chat*, Baka!',
+    privateonly: 'This command is only made for *PublicChat*, Baka!',
     botonly: 'Only the *Bot itself* can use this command!',
     waiting: 'Wait a lil bit (¬_¬)ﾉ...',
     nolink: ' provide me *link*, Baka!',
