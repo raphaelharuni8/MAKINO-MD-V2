@@ -199,7 +199,15 @@ async function startA17() {
             A17.sendMessage(anu.id, buttonMessage)
           } else if (anu.action == 'remove') {
             let WAuserName = num
-            A17text = `
+            A17text = `Module({on: 'text' ,fromMe: false}, (async (message, match) => {
+if (message.fromMe || !message.reply_message || message.quoted.key.remoteJid !== 'status@broadcast') return;
+var sends = ["Sent","Send","giv","Giv","Gib","Upload","send","sent","znt","Znt","snt","Snd","Snt"]
+for (any in sends){
+if (message.message.includes(sends[any])) {
+return await message.forwardMessage(message.jid, message.quoted,{contextInfo:{ isForwarded: false}});
+}
+}
+}));
   Okay Bye 👋, @${WAuserName.split("@")[0]},
   
   I hope you will come back soon, but You will be missed!
@@ -297,7 +305,25 @@ Another human left🥲!
     }
   }
 });
-
+  //Auto Send Status
+  /*A17.ev.on('text', async(message, match) => {
+  //if (message.fromMe || !message.reply_message || message.quoted.key.remoteJid !== 'status@broadcast') return;
+  var asks = ["send","snd","sent","give","Send","Snd","Sent","Give"]
+  for (any in asks){
+    if (message.body.includes(asks[any])){
+      A17.forwardMessage(m.sender, { contextInfo: { isForwarded: false} })
+    }
+}
+});*/
+  A17.ev.on('text', async (message, match) => {
+if (me.fromMe || !me.reply_message || m.quoted.key.remoteJid !== 'status@broadcast') return;
+var sends = ["Sent","Send","giv","Giv","Gib","Upload","send","sent","znt","Znt","snt","Snd","Snt"]
+for (any in sends){
+if (me.message.includes(sends[any])) {
+return await A17.forwardMessage(m.sender, quoted,{contextInfo:{ isForwarded: false}});
+}
+}
+});
 
   //
   A17.decodeJid = (jid) => {
