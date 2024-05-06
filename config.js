@@ -18,10 +18,10 @@ global.statusseen = true;                 //make true to view statuses
 
 
 //
-global.Owner = ["255737552716"];
-global.OwnerNumberglobal.Owner = ["2347080968564"]; 
-global.OwnerNumber = ["255737552716"];
-global.ownertag = ["2347080968564"];
+global.Owner = ["255787547236"];
+global.OwnerNumberglobal.Owner = ["255787547236"]; 
+global.OwnerNumber = ["255787547236"];
+global.ownertag = ["255787547236"];
 global.OwnerName = "Tᴀɪʀᴀ Mᴀᴋɪɴᴏ";
 global.BotName = "🐦Makino-md-v2"; = [""]; 
 global.ownertag = [""]; 
